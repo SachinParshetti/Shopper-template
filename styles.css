@@ -1,0 +1,1324 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styles */
+.up {
+    background-color: rgb(237, 234, 234);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.contact {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+}
+
+.right {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: gray;
+}
+
+.left {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: gray;
+}
+
+.social-link {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.item-holder {
+    position: relative;
+}
+
+.cart-item {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    font-size: 0.625rem;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 0.2rem;
+    position: absolute;
+    bottom: 0.4rem;
+    left: 0.5rem;
+}
+
+.down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.brand-t {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+nav {
+    font-size: 1.125rem;
+    padding: 0.8rem;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Main Sections */
+.article1 {
+    height: 3rem;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.article2 {
+    width: 90%;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.article2-title {
+    font-size: 0.75rem;
+    color: gray;
+    margin: 0.625rem;
+}
+
+.article2-sub {
+    font-size: 2.1875rem;
+    font-weight: 600;
+    margin: 0.3125rem;
+}
+
+.article2-text {
+    font-size: 0.9375rem;
+    color: gray;
+    margin-top: 0.9375rem;
+}
+
+.bag-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem auto;
+}
+
+.bags {
+    background-image: url(./Public/Images/black-bag-with-scarf.jpg);
+    background-size: cover;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.bag-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: white;
+}
+
+.bag-btn {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 1.875rem;
+}
+
+.bag-btn span:hover {
+    padding-left: 0.625rem;
+}
+
+.basic-dress-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    margin: 2rem auto;
+}
+
+.bi-lightning-charge-fill {
+    color: goldenrod;
+}
+
+.cart-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.dress {
+    background-image: url(./Public/Images/women\ dress.jpg);
+    background-size: cover;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+.dress-btn {
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-top: 1.875rem;
+    margin-left: 2rem;
+}
+
+.dress-btn span:hover {
+    padding-left: 0.625rem;
+}
+
+.dress-title {
+    font-size: 1.875rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 2rem;
+}
+
+.men-fashion {
+    background-image: url(./Public/Images/Men\ fashin.jpg);
+    background-size: cover;
+    height: 34rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.kids-fashion {
+    background-image: url(./Public/Images/kids\ fashion.jpg);
+    background-size: cover;
+    height: 34rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0.3rem 0.3rem 0.6rem gray;
+}
+
+.button {
+    width: 9.375rem;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 1rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.women-fashion {
+    background-image: url(./Public/Images/woman\ fashion.jpg);
+    background-size: cover;
+    height: 34rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.women-fashion:hover,
+.men-fashion:hover,
+.kids-fashion:hover {
+    opacity: 0.8;
+}
+
+.button:hover span {
+    padding-right: 0.625rem;
+}
+
+.printed-shirt {
+    background-image: url(./Public/Images/mans\ print\ shirt.jpg);
+    background-size: cover;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    position: relative;
+}
+
+.offer {
+    height: 6.25rem;
+    width: 6.25rem;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 0.625rem;
+    right: 1.25rem;
+}
+
+.offerp {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.printed-shirt:hover .offer {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.shirt-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 2rem;
+}
+
+.shirt-btn {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 1.875rem;
+    margin-left: 2rem;
+}
+
+.shirt-btn span:hover {
+    padding-left: 0.625rem;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+    border-bottom: 1px solid gray;
+}
+
+.service1 {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    padding: 0.625rem;
+}
+
+.service1 span {
+    color: red;
+    padding: 0.625rem;
+    font-size: 1.25rem;
+}
+
+.service-title {
+    font-size: 0.9375rem;
+    font-weight: bold;
+}
+
+.service-text {
+    color: gray;
+}
+
+.swetshirts {
+    background-image: url(./Public/Images/swetshirt.jpg);
+    background-size: cover;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.swetshirt-title {
+    font-size: 1.875rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.swetshirt-btn {
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-top: 1.875rem;
+}
+
+.swetshirt-btn span:hover {
+    padding-left: 0.625rem;
+}
+
+.top-sellers-header {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.top-sellers-header h1 {
+    font-size: 2.5rem;
+}
+
+.top-sellers-header span {
+    margin: 0 1rem;
+    font-size: 1.25rem;
+}
+
+.top-sellers-header span:hover {
+    text-decoration: underline;
+    color: rgb(194, 50, 50);
+}
+
+.top-seller-carts {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 0 auto 3rem;
+}
+
+figure {
+    position: relative;
+}
+
+figcaption {
+    font-size: 1.125rem;
+}
+
+.category-text,
+.price {
+    color: gray;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.tag,
+.tag-sale {
+    width: 3.125rem;
+    padding: 0.3125rem;
+    background-color: white;
+    position: absolute;
+    top: 1.25rem;
+    left: 0;
+}
+
+.tag-sale {
+    background-color: black;
+    color: white;
+}
+
+.sandles:hover {
+    content: url(./Public/Images/sandale2.jpg);
+}
+
+.dresses:hover {
+    content: url(./Public/Images/cotton-print-dress-2.jpg);
+}
+
+.shoes:hover {
+    content: url(./Public/Images/shoes2.jpg);
+}
+
+.tops:hover {
+    content: url(./Public/Images/cropped-top3.jpg);
+}
+
+.midi-dress:hover {
+    content: url(./Public/Images/midi-dress-2.png);
+}
+
+.body-bag:hover {
+    content: url(./Public/Images/cross-body-bag3.jpg);
+}
+
+.skirt:hover {
+    content: url(./Public/Images/Skirt\ 2.jpg);
+}
+
+.heels:hover {
+    content: url(./Public/Images/Heels2.jpg);
+}
+
+.hidden {
+    position: absolute;
+    bottom: 6.25rem;
+    left: 4.375rem;
+}
+
+.hidden span {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: aliceblue;
+    padding: 0.5rem;
+    visibility: hidden;
+    margin: 0 0.5rem;
+}
+
+.hidden:hover span {
+    visibility: visible;
+}
+
+.hidden .bi-eye:hover,
+.hidden .bi-cart:hover,
+.hidden .bi-heart:hover {
+    background-color: rgb(208, 48, 48);
+    color: whitesmoke;
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.discover-header {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.discover-header span {
+    display: inline-block;
+    width: 12.5rem;
+    border-bottom: 1px solid black;
+    padding: 0.3125rem;
+    font-size: 1.125rem;
+    color: #333;
+}
+
+.discover-body {
+    width: 100%;
+    height: 37.5rem;
+    background-image: url(./Public/Images/discover-more-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.discover-text {
+    color: #000;
+    padding-right: 15rem;
+    padding-top: 4rem;
+}
+
+.discover-title {
+    font-size: 3.75rem;
+    color: #000;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.clock {
+    margin-bottom: 1.5rem;
+    margin: 5rem 0;
+}
+
+.time {
+    font-size: 3rem;
+    color: #ff6200;
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.time .separator {
+    color: #ff6200;
+    font-size: 3rem;
+}
+
+.time-labels {
+    display: flex;
+    justify-content: start;
+    gap: 2.5rem;
+    font-size: 0.75rem;
+    color: #888;
+    text-transform: uppercase;
+    margin-top: 0.25rem;
+}
+
+.time-labels span {
+    width: 3.5rem;
+    text-align: center;
+}
+
+.shop-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.shop-btn:hover {
+    background-color: #333;
+}
+
+.shop-btn .arrow {
+    font-size: 1.5rem;
+}
+
+.review-header1 {
+    font-size: 1.125rem;
+    color: gray;
+    margin-top: 6.25rem;
+    display: flex;
+    justify-content: center;
+}
+
+.review-header2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 1.25rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.review-cart-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 6.25rem auto;
+}
+
+.review-cart,
+.review-cart2 {
+    border: 1px solid lightgrey;
+    background-color: white;
+    padding: 1rem;
+}
+
+.review-cart-header {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    font-size: 1.25rem;
+}
+
+.cart1-img {
+    margin: 1.25rem;
+}
+
+.img-text {
+    margin-top: 1.5625rem;
+    line-height: 1.875rem;
+}
+
+.bi-star-fill {
+    color: rgb(238, 140, 28);
+}
+
+.review-cart-body {
+    margin: 0 1.875rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    color: gray;
+}
+
+.review-footer {
+    font-size: 1.25rem;
+    color: gray;
+    margin: 2.5rem 1.875rem 0 1.25rem;
+}
+
+.shopper-header {
+    font-size: 1.875rem;
+    text-align: center;
+    padding: 3.125rem;
+    font-weight: 600;
+}
+
+.shopper-header p {
+    font-size: 0.9375rem;
+    color: gray;
+    font-weight: normal;
+}
+
+.shopper-img-constainer {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+    margin: 0 auto;
+}
+
+.shoper-section-img {
+    height: 11.25rem;
+    background-size: cover;
+}
+
+.likes {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.shoper-section-img:hover .likes {
+    visibility: visible;
+}
+
+.logo-container
+{
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  height: 10rem;
+
+}
+.brand-logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 5rem auto 6rem;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 3;
+    background-color: #fff;
+}
+
+.brand-logo-container img {
+    max-width: 120px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.brand-logo-container img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    height: auto;
+    min-height: 20rem;
+    background-image: url(./Public/Images/shopper-footer.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.title:hover {
+    transform: scale(1.05);
+}
+
+.footer-main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-main input {
+    width: 90%;
+    max-width: 21.875rem;
+    padding: 0.75rem;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    margin: 1rem 0;
+    border: 2px solid rgb(51, 51, 51);
+    font-size: 0.875rem;
+}
+
+.footer-main button {
+    width: 90%;
+    max-width: 9.375rem;
+    padding: 0.75rem;
+    background-color: rgb(94, 91, 91);
+    color: white;
+    border: none;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.footer-main button:hover {
+    background-color: rgb(77, 75, 75);
+}
+
+.footer-row {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    margin: 2rem auto;
+    color: white;
+    font-size: 0.9375rem;
+    text-align: left;
+}
+
+.aside-logo {
+    font-size: 1.875rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+.media {
+    font-size: 0.9375rem;
+    color: gray;
+    text-align: center;
+    margin-top: 1.875rem;
+}
+
+.footer-row p {
+    line-height: 1.5rem;
+    margin-top: 0.75rem;
+    color: gray;
+}
+
+.row-title {
+    font-weight: 500;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-top: 1px solid lightgray;
+    flex-wrap: wrap;
+}
+
+.copyright span {
+    font-size: 0.75rem;
+    color: gray;
+}
+
+.copyright img {
+    height: 1.5625rem;
+    width: 2.1875rem;
+    margin: 0 0.125rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .cart-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .basic-dress-container {
+        grid-template-columns: 1fr;
+    }
+
+    .top-seller-carts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .review-cart-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .shopper-img-constainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-row {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .discover-body {
+        height: 30rem;
+    }
+
+    .discover-title {
+        font-size: 3rem;
+    }
+
+    .time {
+        font-size: 2.5rem;
+    }
+
+    .time .separator {
+        font-size: 2.5rem;
+    }
+
+    .time-labels {
+        gap: 2rem;
+    }
+
+    .discover-text {
+        padding-right: 8rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+        padding: 1.25rem 0.75rem;
+    }
+
+    .brand-logo-container {
+        gap: 1rem;
+        margin: 3rem auto 4rem;
+        padding: 1rem;
+    }
+
+    .brand-logo-container img {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .up {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem;
+    }
+
+    .right,
+    .left {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 0.8rem;
+        gap: 0.5rem;
+    }
+
+    .down {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0.75rem;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(237, 234, 234);
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .cart-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .bag-container {
+        grid-template-columns: 1fr;
+    }
+
+    .basic-dress-container {
+        grid-template-columns: 1fr;
+    }
+
+    .dress-title,
+    .dress-btn,
+    .shirt-title,
+    .shirt-btn {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    .top-seller-carts {
+        grid-template-columns: 1fr;
+    }
+
+    .review-cart-container {
+        grid-template-columns: 1fr;
+    }
+
+    .shopper-img-constainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-row {
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-main input,
+    .footer-main button {
+        width: 80%;
+        max-width: none;
+    }
+
+    .discover-body {
+        height: 40rem;
+        background-position: top center;
+        justify-content: center;
+    }
+
+    .discover-text {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .discover-title {
+        font-size: 2rem;
+    }
+
+    .time {
+        font-size: 2rem;
+        justify-content: center;
+    }
+
+    .time .separator {
+        font-size: 2rem;
+    }
+
+    .time-labels {
+        gap: 1.5rem;
+        font-size: 0.625rem;
+        justify-content: center;
+    }
+
+    .brand-logo-container {
+        gap: 0.75rem;
+        margin: 2rem auto 3.5rem;
+        padding: 1rem;
+        justify-content: center;
+        background-color: #fff;
+        z-index: 3;
+    }
+
+    .brand-logo-container img {
+        max-width: 80px;
+    }
+
+    .men-fashion,
+    .kids-fashion,
+    .women-fashion {
+        height: 28rem;
+    }
+
+    .bags,
+    .dress,
+    .printed-shirt,
+    .swetshirts {
+        height: 20rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        padding: 1rem 0.5rem;
+        letter-spacing: 0.03em;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .brand-t,
+    .main-title,
+    .bag-title,
+    .shirt-title,
+    .dress-title,
+    .swetshirt-title {
+        font-size: 1.25rem;
+    }
+
+    .article2-sub {
+        font-size: 1.5rem;
+    }
+
+    .article2-text {
+        font-size: 0.875rem;
+    }
+
+    .top-sellers-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .discover-body {
+        height: 35rem;
+    }
+
+    .discover-text {
+        padding: 1rem;
+    }
+
+    .discover-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .time {
+        font-size: 1.25rem;
+        gap: 0.25rem;
+    }
+
+    .time .separator {
+        font-size: 1.25rem;
+    }
+
+    .time-labels {
+        gap: 0.75rem;
+        font-size: 0.5rem;
+    }
+
+    .time-labels span {
+        width: 2.5rem;
+    }
+
+    .shop-btn {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .review-header2 {
+        font-size: 1.5rem;
+    }
+
+    .bag-btn,
+    .shirt-btn,
+    .dress-btn,
+    .swetshirt-btn {
+        font-size: 0.875rem;
+        margin-top: 1rem;
+    }
+
+    .footer-main {
+        padding: 0 1rem;
+    }
+
+    .footer-main input {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .footer-main button {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .footer-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 1.5rem auto;
+    }
+
+    .title {
+        font-size: 1.25rem;
+        padding: 0.75rem 0.5rem;
+        text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.4);
+    }
+
+    .aside-logo {
+        font-size: 1.5rem;
+    }
+
+    .footer-row p {
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+    }
+
+    .media {
+        font-size: 0.875rem;
+        margin-top: 1rem;
+    }
+
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        text-align: center;
+        padding: 0.75rem;
+    }
+
+    .copyright span {
+        font-size: 0.625rem;
+    }
+
+    .copyright img {
+        height: 1.25rem;
+        width: 1.75rem;
+    }
+
+    .shoper-section-img {
+        height: 8rem;
+    }
+
+    .offer {
+        height: 4rem;
+        width: 4rem;
+        font-size: 0.875rem;
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .hidden {
+        bottom: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hidden span {
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 0.25rem;
+    }
+
+    .article1 {
+        font-size: 0.875rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .hamburger {
+        font-size: 1.25rem;
+    }
+
+    .nav-menu {
+        padding: 0.5rem;
+    }
+
+    nav {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .brand-logo-container {
+        gap: 0.5rem;
+        margin: 1.5rem auto 3rem;
+        padding: 0.75rem;
+        background-color: #fff;
+        z-index: 3;
+    }
+
+    .brand-logo-container img {
+        max-width: 60px;
+    }
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 12px;
+    }
+
+    .discover-body {
+        height: 30rem;
+    }
+
+    .discover-title {
+        font-size: 1.25rem;
+    }
+
+    .time {
+        font-size: 1rem;
+    }
+
+    .time .separator {
+        font-size: 1rem;
+    }
+
+    .shop-btn {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .shopper-img-constainer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-main input,
+    .footer-main button {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .footer-row {
+        gap: 1rem;
+    }
+
+    .title {
+        font-size: 1.125rem;
+        padding: 0.5rem;
+    }
+
+    .aside-logo {
+        font-size: 1.25rem;
+    }
+
+    .brand-logo-container {
+        gap: 0.5rem;
+        margin: 1rem auto 2.5rem;
+        padding: 0.5rem;
+        background-color: #fff;
+        z-index: 3;
+    }
+
+    .brand-logo-container img {
+        max-width: 50px;
+    }
+}
